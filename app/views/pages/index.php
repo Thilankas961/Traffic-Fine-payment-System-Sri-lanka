@@ -18,14 +18,14 @@
         <div class="form login">
             <div class="form-content">
                 <header>Admin Login</header>
-                <form action="" method="post">
+                <form action="<?php echo URLROOT ?>/user/loginUser" method="post">
                     <div class="email">
                         <label for="">Email</label>
                         <input type="email" name="email" placeholder="Enter Your Email Address" class="input-email">
                     </div>
                     <div class="password">
                         <label for="">Password</label>
-                        <input type="password" name="pass" placeholder="Enter Your Password" class="input-password">
+                        <input type="password" name="password" placeholder="Enter Your Password" class="input-password">
                     </div>
                     <span>
                         <input type="checkbox" checked="checked" name="remember" class="input-remember">
@@ -33,8 +33,7 @@
                         <a href="#" class="forget-password">Forget password</a>
                     </span>
                     <div class="login-btn">
-                        <a href="<?php echo URLROOT; ?>/police_station/Dashboard"><input type="submit" name="login"
-                                value="login"></a>
+                        <input type="submit" name="login" value="login">
                     </div>
 
 

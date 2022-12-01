@@ -34,8 +34,9 @@ class Database
             echo $this->error;
         }
     }
+
     // Prepare statement with query
-    public function query($sql)
+    public function prepare($sql)
     {
         $this->stmt = $this->dbh->prepare($sql);
     }
